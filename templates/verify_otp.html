@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Verify OTP</title>
+  </head>
+  <body>
+    <h1>Enter the OTP from your Google Authenticator app</h1>
+
+    <div>
+      <h2>Scan this QR code with Google Authenticator</h2>
+      <img src="data:image/png;base64,{{ qr_code }}" alt="QR Code" />
+    </div>
+
+    <form method="POST">
+      <label for="otp">OTP:</label>
+      <input type="text" id="otp" name="otp" required />
+      <br />
+      <button type="submit">Verify</button>
+    </form>
+  </body>
+</html>
